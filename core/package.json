@@ -1,10 +1,15 @@
 {
   "name": "@vudel/core",
-  "version": "0.1.11",
+  "version": "0.1.13",
   "description": "Basic data wrapper and field wrapper",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "types/index.d.ts",
+  "homepage": "https://github.com/tspayne87/vudel/tree/main/core",
+  "repository": {
+    "url": "https://github.com/tspayne87/vudel",
+    "type": "git"
+  },
   "scripts": {
     "test": "mocha -r ts-node/register 'tests/**/*.spec.ts'",
     "build": "npm run clean && rollup -c && npm run generate:declaration",

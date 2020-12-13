@@ -50,7 +50,7 @@ The following is a simple usage of creating a UI with some validations and field
 ```typescript
   import { defineComponent } from 'vue';
   import { useUser } from './compositions/useUser';
-  import { FieldSet, Validation } from '../src';
+  import { FieldSet, Validation } from '@vudel/ui';
   import { IUser } from './interfaces';
 
   export default defineComponent({

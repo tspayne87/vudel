@@ -1,6 +1,7 @@
 # @vudel
-Vudel is a set of packages meant to help with model.  Using the @vudel/validations you can add validations to your model
-and using @vudel/ui you can pass a set of fields into a UI component to create a form on the page.
+Vudel is a set of packages meant to help with model.  Using the [@vudel/validations](https://github.com/tspayne87/vudel/tree/main/validations)
+you can add validations to your model and using [@vudel/ui](https://github.com/tspayne87/vudel/tree/main/ui) you can pass a set of
+fields into a UI component to create a form on the page.
 
 ## Usage
 The following is a simple usage of creating a field set and adding some fields

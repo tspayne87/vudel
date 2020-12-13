@@ -1,10 +1,15 @@
 {
   "name": "@vudel/validations",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Basic Validation library that takes a field set and configures validation for that field",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "types/index.d.ts",
+  "homepage": "https://github.com/tspayne87/vudel/tree/main/validations",
+  "repository": {
+    "url": "https://github.com/tspayne87/vudel",
+    "type": "git"
+  },
   "scripts": {
     "test": "mocha -r ts-node/register 'tests/**/*.spec.ts'",
     "build": "npm run clean && rollup -c && npm run generate:declaration",
