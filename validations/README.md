@@ -20,21 +20,21 @@ The following is a simple usage of creating a field set and adding in some valid
   import { addValidation } from '@vudel/validations';
 
   // Create the field set
-  const set = useFieldSet({ foo: 'bar', bar: 'foo' });
-  const validation = addValidation(set);
+  const { fields, data } = useFieldSet({ foo: 'bar', bar: 'foo' });
+  const { validations } = addValidation({ fields, data });
 
   // Add some fields for this field set
-  set.fields.push({ name: 'foo', validations: ['required'] });
-  set.fields.push({ name: 'bar', validations: ['required'] });
+  fields.push({ name: 'foo', validations: { required: { } } });
+  fields.push({ name: 'bar', validations: { required: { } } });
 
   // The original data is stored in the data property 
-  set.data.foo = 'foo-bar';
+  data.foo = 'foo-bar';
 
   setTimeout(() => {
-    console.log(validation.validations.foo); // [] or empty array
-    console.log(validation.validations.bar); // ['Field is required']
+    console.log(validations.foo); // [] or empty array
+    console.log(validations.bar); // ['Field is required']
   });
 ```
 
 ### License
-@vudel/core is licensed under the [MIT license](https://opensource.org/licenses/MIT).
+@vudel/validations is licensed under the [MIT license](https://opensource.org/licenses/MIT).
