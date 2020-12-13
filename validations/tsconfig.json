@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "types": [ "node", "mocha", "chai", "@vudel/core" ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}

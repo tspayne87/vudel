@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "rootDir": "src",
+    "types": [ "node", "mocha", "chai" ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}

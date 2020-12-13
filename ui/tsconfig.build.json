@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "types": [ "node", "mocha", "chai", "@vudel/core", "@vudel/validations" ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}

@@ -1,0 +1,45 @@
+a.1.b
+
+label-a-1-b          --- 1
+label-a-b            --- 0
+
+-------------------------------
+
+a.1.b.2.c
+
+label-a-1-b-2-c      --- 11
+label-a-1-b-c        --- 10
+label-a-b-2-c        --- 01
+label-a-b-c          --- 00
+
+-------------------------------
+a.1.b.2.c.3.d
+
+label-a-1-b-2-c-3-d  --- 111
+label-a-1-b-2-c-d    --- 110
+label-a-1-b-c-3-d    --- 101
+label-a-1-b-c-d      --- 100
+label-a-b-2-c-3-d    --- 011
+label-a-b-2-c-d      --- 010
+label-a-b-c-3-d      --- 001
+label-a-b-c-d        --- 000
+
+-------------------------------
+a.1.b.2.c.3.d.4.e
+
+label-a-1-b-2-c-3-d-4-e  --- 1111
+label-a-1-b-2-c-3-d-e    --- 1110
+label-a-1-b-2-c-d-4-e    --- 1101
+label-a-1-b-2-c-d        --- 1100
+label-a-1-b-c-3-d-4-e    --- 1011
+label-a-1-b-c-3-d-e      --- 1010
+label-a-1-b-c-d-4-e      --- 1001
+label-a-1-b-c-d-e        --- 1000
+label-a-b-2-c-3-d-4-e    --- 0111
+label-a-b-2-c-3-d-e      --- 0110
+label-a-b-2-c-d-4-e      --- 0101
+label-a-b-2-c-d-e        --- 0100
+label-a-b-c-3-d-4-e      --- 0011
+label-a-b-c-3-d-e        --- 0010
+label-a-b-c-d-4-e        --- 0001
+label-a-b-c-d-e          --- 0000

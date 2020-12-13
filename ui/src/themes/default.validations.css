@@ -1,0 +1,16 @@
+.field .field-validations {
+  border: 1px solid #9B2C2C;
+  border-radius: 0.25rem;
+  background-color: #FED7D7;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.5rem;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 0.50rem;
+}
+
+.field .field-validations .validation-message {
+  font-size: 0.75rem;
+  color: #9B2C2C;
+}

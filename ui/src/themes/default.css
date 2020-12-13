@@ -1,0 +1,71 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.field .field-label {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.field input {
+  outline: none;
+  border: 1px solid #AAAAAA;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.field .field-list {
+  border: 1px solid #AAAAAA;
+  border-radius: 0.25rem;
+}
+
+.field .field-list > .field-label {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0.50rem;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+.field .field-list .field-list-empty {
+  border: 1px solid #975A16;
+  border-radius: 0.25rem;
+  background-color: #FEFCBF;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.5rem;
+  color: #975A16;
+  font-size: 0.75rem;
+  margin: 0.25rem 0.50rem;
+}
+
+.field .field-list .field-list-set-wrapper {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #AAAAAA;
+  padding: 0.25rem 0.50rem;
+  padding-bottom: 1rem;
+}
+
+.field .field-list .field-list-set-wrapper:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.field .field-list .field-label .field-list-add-button,
+.field .field-list .field-list-set-wrapper .field-list-remove-button {
+  display: inline-block;
+  border: 1px solid #2C5282;
+  border-radius: 0.25rem;
+  background-color: #BEE3F8;
+  padding: 0.25rem 0.50rem;
+  cursor: pointer;
+}
+
+.field .field-list .field-label .field-list-add-button:hover,
+.field .field-list .field-list-set-wrapper .field-list-remove-button:hover {
+  background-color: #90CDF4;
+}

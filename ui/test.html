@@ -1,0 +1,24 @@
+<div class="field-list">
+  <slot :name="`label-${field.name}`" :field="field">
+    <label class="field-label" v-if="field.label">
+      {{field.label}}
+
+      <span class="field-list-add-button" @click="addItem()">Add</span>
+    </label>
+  </slot>
+
+  <div class="field-list-content">
+    <template v-if="data.length > 0">
+      <div v-for="(data, i) in data" :key="i">
+        <field-set :fields="field.children" :data="data" :path="path(i)">
+          <template v-slot:default="{ field, fieldName }">
+            <slot :field="field" :fieldName="`{${i}}.${fieldName}`" />
+          </template>
+        </field-set>
+      </div>
+    </template>
+    <div class="field-list-empty" v-else>
+      {{field.label}} is empty, please add more.
+    </div>
+  </div>
+</div>
